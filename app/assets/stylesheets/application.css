@@ -13,3 +13,178 @@
  *= require_tree .
  *= require_self
  */
+
+
+ * {
+   box-sizing: border-box;
+ }
+
+ .wrapper{
+   width: 100vw;
+   display: flex;
+ }
+ .side{
+   height: 100vh;
+   width: 300px;
+   background-color: #253141;
+ }
+
+ .main{
+  height: 100%;
+   width: calc(100vw - 300px);
+   background-color: #ffffff;
+ }
+ 
+ 
+ /* 右側 */
+ 
+ /* 右上 */
+ .main-header{
+   height: 100px;
+   background-color:#ffffff;
+   padding: 0 40px;
+   display: flex;
+   justify-content: space-between;
+
+  }
+
+  .about-chat{
+    font-size: 24px;
+    color: #333;
+    margin-top: 36px;
+  }
+
+  .chat-end-btn{
+    margin-top: 40px;
+  }
+
+  .chat-end-btn a{
+    text-decoration: none;
+    color: darkred;
+    padding: 20px;
+    border: 1px solid darkred;
+   
+
+  }
+  
+  /* 右真ん中 */
+  .messages{
+    height: calc(100vh - 190px);
+    background-color: #FAFAFA;
+    padding: 46px 40px 0px 40px; 
+    overflow: scroll;
+  }
+
+  .message{
+    margin: 10px 0;
+  }
+
+  .name-and-date{
+    display: flex;
+  }
+  .message-user-name{
+    font-size: 16px;
+    color: #434A54;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .message-date{
+    font-size:12px;
+    color: #999;
+  }
+
+  .message-text {
+    font-size: 14px;
+    color: #434A54;
+    margin-bottom: 40px;
+  }
+  
+  /* 右下フォーム */
+  .form{
+    background-color: #DDDDDD;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
+  }
+  
+  .form-input{
+    background-color: white;
+    width:100%;
+    display:flex;
+  }
+  
+  .text-form{
+    border:none;
+    padding-left: 10px;
+    height: 50px;
+    width:100%;
+  }
+
+  .form-image{
+    font-size: 12px;
+    background-color: lightblue;
+    width: 60px;
+    color: white;
+    margin: 5px 10px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .hidden{
+    display:none;
+  }
+  .send-btn{
+    border:none;
+    color: white;
+    background-color: #38AEF0;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 0 15px;
+    height: 50px;
+  }
+  
+  
+  
+  /* 左側 */
+
+  /* 左上 */
+  .side-header{
+    height: 100px;
+    background-color: #253141;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .user-name a{
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+  }
+  
+  .create-chat-btn{
+    font-size: 10px;
+  }
+  
+  .create-chat-btn a{
+    text-decoration: none;
+    color: deepskyblue;
+    padding: 14px;
+    border: solid 1px lightblue;
+  }
+  
+  /* 左中 */
+  .side-main{
+    padding: 0 20px;
+    background-color: #2F3E51;
+    height: calc(100vh - 100px);
+    overflow: scroll;
+  }
+  .chatroom {
+    padding: 20px 0 40px 0;    
+   }
+         
+  .chatroom a{
+    text-decoration: none; 
+    color:white;
+   }
