@@ -12,7 +12,8 @@
 <% user= User.find(current_user.id)%>
 <% user.rooms.each do |room| %>
 <div class="chatroom">
-<a href="/messages"><%= room.name %></a>
+<%=link_to room.name,room_messages_path(room.id)%>
+
 </div>
 <%end%>
 
